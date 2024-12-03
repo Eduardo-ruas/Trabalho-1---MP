@@ -7,6 +7,11 @@ TEST(JogoDaVelhaTest, TesteVitoriaX) {
     EXPECT_EQ(verifica_jogo(tabuleiro), 1);  // X vence
 }
 
+//TESTE PARA SABER SE O VENCE
+TEST(JogoDaVelhaTest, TesteVitoriaO) {
+    int tabuleiro[3][3] = {{2, 2, 2}, {1, 0, 1}, {0, 1, 0}};
+    EXPECT_EQ(verifica_jogo(tabuleiro), 2);  // O vence
+}
 
 //TESTE PARA SABER SE HOUVE EMPATE 
 TEST(JogoDaVelhaTest, TesteEmpate) {
