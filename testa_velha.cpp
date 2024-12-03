@@ -19,3 +19,9 @@ TEST(JogoDaVelhaTest, TesteJogoIndefinido) {
     int tabuleiro[3][3] = {{1, 0, 2}, {2, 1, 0}, {0, 2, 0}};
     EXPECT_EQ(verifica_jogo(tabuleiro), -1);  // Jogo indefinido
 }
+
+//TESTE PARA SABER JOGO IMPOSSIVEL (EX: NUMEROS DE JOGADAS EXCESSIVAS)
+TEST(JogoDaVelhaTest, TesteJogoImpossivel) {
+    int tabuleiro[3][3] = {{1, 1, 1}, {1, 1, 1}, {1, 1, 1}};
+    EXPECT_EQ(verifica_jogo(tabuleiro), -2);  // Jogo impossível
+}
