@@ -179,3 +179,14 @@ TEST_CASE("Jogo empatado", "[verifica_jogo]") {
     };
     REQUIRE(verifica_jogo(tabuleiro) == 0);
 }
+
+// TESTE JOGO IMPOSSÍVEL X
+
+TEST_CASE("Jogo impossível - muitos X", "[verifica_jogo]") {
+    int tabuleiro[3][3] = {
+        {1, 1, 1},
+        {1, 1, 1},
+        {1, 0, 2}
+    };
+    REQUIRE(verifica_jogo(tabuleiro) == -2);
+}
