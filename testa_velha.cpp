@@ -190,3 +190,12 @@ TEST_CASE("Jogo impossível - muitos X", "[verifica_jogo]") {
     };
     REQUIRE(verifica_jogo(tabuleiro) == -2);
 }
+
+TEST_CASE("Jogo impossível - muitos O", "[verifica_jogo]") {
+    int tabuleiro[3][3] = {
+        {2, 2, 2},
+        {2, 2, 2},
+        {2, 1, 0}
+    };
+    REQUIRE(verifica_jogo(tabuleiro) == -2);
+}
