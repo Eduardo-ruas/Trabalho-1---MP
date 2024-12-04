@@ -202,4 +202,172 @@ Date:   Mon Dec 2 23:59:48 2024 -0300
 commit 9bcbcba10148e492da1fc9fbe9406dddf23c35cc
 Author: eduardoruas <eduardobritoruas@gmail.com>
 Date:   Mon Dec 2 23:19:07 2024 -0300
-:
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        catch.hpp
+
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add catch.hpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Arquivo catch.hpp (Framework de Teste) adicionado"
+[main 8878868] Arquivo catch.hpp (Framework de Teste) adicionado
+ 2 files changed, 205 insertions(+)
+ create mode 100644 catch.hpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Arquivo testa_velha alterado e em desenvolvimento"
+[main a6cca55] Arquivo testa_velha alterado e em desenvolvimento
+ 1 file changed, 4 insertions(+), 32 deletions(-)
+ rewrite testa_velha.cpp (97%)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Teste: Jogo vazio"
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testa_velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Teste: Jogo com apenas uma marcação"
+[main 516589a] Teste: Jogo com apenas uma marcação
+ 1 file changed, 18 insertions(+)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testa_velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_veha.cpp
+fatal: pathspec 'testa_veha.cpp' did not match any files
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Testes das possibilidades de vitória do X feitos"
+[main bb59102] Testes das possibilidades de vitória do X feitos
+ 1 file changed, 73 insertions(+), 1 deletion(-)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testa_velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Teste: Possibilidades de vitória do O"
+[main 21f751b] Teste: Possibilidades de vitória do O
+ 1 file changed, 76 insertions(+)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testa_velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Teste: Jogo empatado"
+[main 05daea3] Teste: Jogo empatado
+ 1 file changed, 11 insertions(+)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testa_velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commmit -m "Teste: Jogo impossível X"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Teste: Jogo impossível X"
+[main 431da88] Teste: Jogo impossível X
+ 1 file changed, 11 insertions(+)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testa_velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Teste: Jogo impossível O"
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testa_velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testa_velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Teste: Jogo impossível O"
+[main 98dd14b] Teste: Jogo impossível O
+ 1 file changed, 9 insertions(+)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Arquivo testa_velha.cpp desenvolvido"
+On branch main
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testa_velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "Arquivo testa_velha.cpp desenvolvido"
+[main 4e0a5ed] Arquivo testa_velha.cpp desenvolvido
+ 1 file changed, 1 insertion(+), 1 deletion(-) 
