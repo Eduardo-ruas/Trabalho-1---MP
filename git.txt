@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 eduardo@DESKTOP-FFN2OM5:~$ git config --global user.name "eduardoruas"
 eduardo@DESKTOP-FFN2OM5:~$ git config --global user.email "eduardobritoruas@gmail.com"
 eduardo@DESKTOP-FFN2OM5:~$ mkdir Trabalho MP
@@ -203,3 +204,209 @@ commit 9bcbcba10148e492da1fc9fbe9406dddf23c35cc
 Author: eduardoruas <eduardobritoruas@gmail.com>
 Date:   Mon Dec 2 23:19:07 2024 -0300
 :
+=======
+eduardo@DESKTOP-FFN2OM5:~$ git config --global user.name "eduardoruas"
+eduardo@DESKTOP-FFN2OM5:~$ git config --global user.email "eduardobritoruas@gmail.com"
+eduardo@DESKTOP-FFN2OM5:~$ mkdir Trabalho MP
+eduardo@DESKTOP-FFN2OM5:~$ cd Trabalho MP
+-bash: cd: too many arguments
+eduardo@DESKTOP-FFN2OM5:~$ cd "Trabalho MP"
+-bash: cd: Trabalho MP: No such file or directory
+eduardo@DESKTOP-FFN2OM5:~$ mkdir Trabalho-MP
+eduardo@DESKTOP-FFN2OM5:~$ cd Trabalho-MP
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ code .
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git init
+Initialized empty Git repository in /home/eduardo/Trabalho-MP/.git/
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add .
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   testa_velha.cpp
+        new file:   velha.cpp
+        new file:   velha.hpp
+
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit "criação dos arquivos: velha.cpp, velha.h, testa_velha.cpp"
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "arquivos velha.cpp, velha.h e  testa_velha.cpp criados"
+[master (root-commit) f3b90be] arquivos velha.cpp, velha.h e  testa_velha.cpp criados
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 testa_velha.cpp
+ create mode 100644 velha.cpp
+ create mode 100644 velha.hpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git remote add origin https://github.com/Eduardo-ruas/Trabalho-1---MP.git
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git branch -M main
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git push -u origin main
+Username for 'https://github.com': Eduardo-ruas
+Password for 'https://Eduardo-ruas@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 252 bytes | 84.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Eduardo-ruas/Trabalho-1---MP.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "arquivos criados"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add .
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "arquivos criados"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "codigo do arquivo velha.cpp desenvolvido"
+[main f3cb235] codigo do arquivo velha.cpp desenvolvido
+ 1 file changed, 16 insertions(+)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add .
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "algoritmo dos arquivos velha.hpp e velha.cpp desenvolvidos"
+[main 9bcbcba] algoritmo dos arquivos velha.hpp e velha.cpp desenvolvidos
+ 1 file changed, 16 deletions(-)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   testa_velha.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha
+fatal: pathspec 'testa_velha' did not match any files
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "primeiro teste feito: saber quando o X vence"
+[main 0a35f03] primeiro teste feito: saber quando o X vence
+ 1 file changed, 9 insertions(+)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "segundo teste feito: saber se houve empate"
+[main ebb1b60] segundo teste feito: saber se houve empate
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   velha.cpp
+        modified:   velha.hpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add .
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   velha.cpp
+        modified:   velha.hpp
+
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "terceiro teste: saber se o jogo esta indefinido"
+[main e22a08d] terceiro teste: saber se o jogo esta indefinido
+ 3 files changed, 63 insertions(+)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git add testa_velha.cpp
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "quarto teste feito: saber se o jogo é impossível"
+[main 624fe16] quarto teste feito: saber se o jogo é impossível
+ 1 file changed, 6 insertions(+)
+
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git commit -m "quinto teste feito: saber quando O vence"
+[main c813e52] quinto teste feito: saber quando O vence
+ 1 file changed, 5 insertions(+)
+eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git log
+commit c813e52f088b30642216d7be8be85a48ab0ee9fe (HEAD -> main)
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Tue Dec 3 00:50:45 2024 -0300
+
+    quinto teste feito: saber quando O vence
+
+commit 624fe1647e44215f97f3b181076721b5749abf00
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Tue Dec 3 00:11:15 2024 -0300
+
+    quarto teste feito: saber se o jogo é impossível
+
+commit e22a08d331404ca3e5d04927b4d6774042596d1f
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Tue Dec 3 00:07:59 2024 -0300
+
+    terceiro teste: saber se o jogo esta indefinido
+
+commit ebb1b601d31fff40b9d99f684b15323bb642feb4
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Tue Dec 3 00:04:53 2024 -0300
+
+    segundo teste feito: saber se houve empate
+
+commit 0a35f03ce1ee119bfd44ac48501c28679eb6890e
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:59:48 2024 -0300
+
+    primeiro teste feito: saber quando o X vence
+
+commit 9bcbcba10148e492da1fc9fbe9406dddf23c35cc
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:19:07 2024 -0300
+>>>>>>> 7a8974425e952d5641e46583e63b9b5d13404ce7
