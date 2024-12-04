@@ -168,3 +168,14 @@ TEST_CASE("Vitória do O na diagonal secundária", "[verifica_jogo]") {
     };
     REQUIRE(verifica_jogo(tabuleiro) == 1);
 }
+
+// TESTE DE JOGO EMPATADO
+
+TEST_CASE("Jogo empatado", "[verifica_jogo]") {
+    int tabuleiro[3][3] = {
+        {1, 2, 1},
+        {1, 2, 2},
+        {2, 1, 1}
+    };
+    REQUIRE(verifica_jogo(tabuleiro) == 0);
+}
