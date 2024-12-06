@@ -1,43 +1,48 @@
-all: testa_velha.cpp   velha.cpp velha.hpp velha.o
-	g++ -std=c++11 -Wall velha.o testa_velha.cpp -o testa_velha
-	./testa_velha
-	#use comentario se necessario
+# Variáveis para facilitar alterações futuras
+CXX = g++
+CXXFLAGS = -std=c++11 -Wall
+COVERAGE_FLAGS = -fprofile-arcs -ftest-coverage
+DEBUG_FLAGS = -g
+LDFLAGS = 
+TARGET = testa_velha
+OBJS = velha.o
 
-compile: testa_velha.cpp   velha.cpp velha.hpp velha.o
-	g++ -std=c++11 -Wall velha.o testa_velha.cpp -o testa_velha
+# Alvo principal
+all: $(TARGET)
+	./$(TARGET)
 
-velha.o : velha.cpp velha.hpp
-	g++ -std=c++11 -Wall -c velha.cpp
-	
-testa_velha: 	testa_velha.cpp   velha.cpp velha.hpp velha.o
-	g++ -std=c++11 -Wall velha.o testa_velha.cpp -o testa_velha
-	
-test: testa_velha	
-	./testa_velha
-	
-cpplint: testa_velha.cpp   velha.cpp velha.hpp
-	cpplint   --exclude=catch.hpp  *.*
-	
-gcov: testa_velha.cpp   velha.cpp velha.hpp 
-	g++ -std=c++11 -Wall -fprofile-arcs -ftest-coverage -c velha.cpp
-	g++ -std=c++11 -Wall -fprofile-arcs -ftest-coverage velha.o testa_velha.cpp -o testa_velha
-	./testa_velha
-	gcov *.cpp	
-	 
-debug: testa_velha.cpp   velha.cpp velha.hpp 
-	g++ -std=c++11 -Wall -g -c velha.cpp
-	g++ -std=c++11 -Wall  -g velha.o testa_velha.cpp -o testa_velha
-	gdb testa_velha
-	
-	
-cppcheck: testa_velha.cpp   velha.cpp velha.hpp
-	cppcheck  --enable=warning .
+# Alvo de compilação principal
+$(TARGET): $(OBJS) testa_velha.cpp
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(OBJS) testa_velha.cpp -o $(TARGET)
 
-valgrind: testa_velha
-	valgrind --leak-check=yes --log-file=valgrind.rpt testa_velha
+# Compila velha.o
+velha.o: velha.cpp velha.hpp
+	$(CXX) $(CXXFLAGS) -c velha.cpp
 
+# Alvo para cobertura de código
+gcov: clean
+	$(CXX) $(CXXFLAGS) $(COVERAGE_FLAGS) -c velha.cpp
+	$(CXX) $(CXXFLAGS) $(COVERAGE_FLAGS) $(OBJS) testa_velha.cpp -o $(TARGET)
+	./$(TARGET)
+	gcov *.cpp
 
+# Alvo para depuração
+debug: $(OBJS) testa_velha.cpp
+	$(CXX) $(CXXFLAGS) $(DEBUG_FLAGS) $(OBJS) testa_velha.cpp -o $(TARGET)
+	gdb $(TARGET)
+
+# Verifica código com cpplint
+cpplint:
+	cpplint --exclude=catch.hpp *.*
+
+# Verifica código com cppcheck
+cppcheck:
+	cppcheck --enable=warning .
+
+# Teste com valgrind
+valgrind: $(TARGET)
+	valgrind --leak-check=yes --log-file=valgrind.rpt $(TARGET)
+
+# Limpa arquivos gerados
 clean:
-	rm -rf *.o *.exe *.gc* testa_velha 
-	
-	
+	rm -rf *.o *.exe *.gc* $(TARGET)
