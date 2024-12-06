@@ -29,7 +29,7 @@ int verifica_jogo(int tabuleiro[3][3]) {
         }
     }
 
-    // Verificar se o jogo é impossível (todos os quadrados são iguais)
+  // 2. Verificar se o jogo é impossível (todos os quadrados são iguais)
     int x_count = 0;
     int o_count = 0;
     for (int i = 0; i < 3; ++i) {
@@ -46,6 +46,15 @@ int verifica_jogo(int tabuleiro[3][3]) {
         return -2;  // Jogo impossível
     }
 
+    // 3. Verificar se há posições vazias (indefinido)
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            if (tabuleiro[i][j] == 0) {
+                return -1;  // Jogo indefinido
+            }
+        }
+    }
+
     // Se não houver vencedor, o jogo está empatado
-    return 0;
+    return 0; 
 }
