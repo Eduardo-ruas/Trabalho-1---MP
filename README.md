@@ -1,3 +1,5 @@
+-> O programa pode ser compilado apenas com o comando "make"
+
 -> As regras estão no arquivo Makefile
 
 -> link do repósitorio github: https://github.com/Eduardo-ruas/Trabalho-1---MP.git
