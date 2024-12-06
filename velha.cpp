@@ -19,19 +19,22 @@ int verifica_jogo(int tabuleiro[3][3]) {
         return tabuleiro[0][2];
     }
 
-    // 2. Verificar se todas as casas do tabuleiro são iguais (jogo impossível)
+    // 2. Verificar se todas as casas do tabuleiro são iguais
     bool todas_iguais = true;
-    int primeiro = tabuleiro[0][0]; // Valor da primeira casa
-
-    for (int i = 0; i < 3; ++i) {
-        for (int j = 0; j < 3; ++j) {
-            if (tabuleiro[i][j] != primeiro || tabuleiro[i][j] == 0) {
-                todas_iguais = false;
+    int primeiro = tabuleiro[0][0];  // Valor da primeira casa
+    if (primeiro == 0) {
+        todas_iguais = false;  // Casas vazias não contam como iguais
+    } else {
+        for (int i = 0; i < 3; ++i) {
+            for (int j = 0; j < 3; ++j) {
+                if (tabuleiro[i][j] != primeiro) {
+                    todas_iguais = false;
+                    break;
+                }
+            }
+            if (!todas_iguais) {
                 break;
             }
-        }
-        if (!todas_iguais) {
-            break;
         }
     }
 
@@ -39,24 +42,7 @@ int verifica_jogo(int tabuleiro[3][3]) {
         return -2;  // Jogo impossível
     }
 
-    // 3. Verificar se o jogo é impossível (mais de 5 jogadas para X ou O)
-    int x_count = 0;
-    int o_count = 0;
-    for (int i = 0; i < 3; ++i) {
-        for (int j = 0; j < 3; ++j) {
-            if (tabuleiro[i][j] == 1) {
-                x_count++;
-            } else if (tabuleiro[i][j] == 2) {
-                o_count++;
-            }
-        }
-    }
-
-    if (x_count > 5 || o_count > 5) {
-        return -2;  // Jogo impossível
-    }
-
-    // 4. Verificar se há posições vazias (jogo indefinido)
+    // 3. Verificar se há posições vazias (jogo indefinido)
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
             if (tabuleiro[i][j] == 0) {
@@ -65,6 +51,6 @@ int verifica_jogo(int tabuleiro[3][3]) {
         }
     }
 
-    // 5. Se não houver vencedor, o jogo está empatado
-    return 0; 
+    // 4. Se não houver vencedor, o jogo está empatado
+    return 0;
 }
