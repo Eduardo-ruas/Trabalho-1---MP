@@ -1,6 +1,116 @@
-GIT LOGS DO PROJETO:
+-> As regras estão no arquivo Makefile
 
+-> link do repósitorio github: https://github.com/Eduardo-ruas/Trabalho-1---MP.git
+
+-> GIT LOGS DO PROJETO:
+
+commit 87d62370b44226a69b3d83132c6a6a555c9c6e80 (HEAD -> main, origin/main)
 Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 12:20:38 2024 -0300
+
+    testes feitos
+
+commit f448cea94b87294fa073ca6c2676a02a92b022b6
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 12:18:33 2024 -0300
+
+    logica do arquivo velha.cpp sendo alterado para fins de teste
+
+commit f95b303cad4308f7fbd8507883896c52c0981900
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 12:14:58 2024 -0300
+
+    Testes ainda sendo realizados
+
+commit 39c1b56038d96b62c4428477e2308ed30fd4f2df
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 12:01:56 2024 -0300
+
+    testes ainda sendo realizados
+
+commit 51ad2e184571af597e9f2e4ff31d4d026ad87207
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 11:57:25 2024 -0300
+ ESCOD
+commit 87d62370b44226a69b3d83132c6a6a555c9c6e80 (HEAD -> main, origin/main)
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 12:20:38 2024 -0300
+
+    testes feitos
+
+commit f448cea94b87294fa073ca6c2676a02a92b022b6
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 12:18:33 2024 -0300
+
+    logica do arquivo velha.cpp sendo alterado para fins de teste
+
+commit f95b303cad4308f7fbd8507883896c52c0981900
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 12:14:58 2024 -0300
+
+    Testes ainda sendo realizados
+
+commit 39c1b56038d96b62c4428477e2308ed30fd4f2df
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 12:01:56 2024 -0300
+
+    testes ainda sendo realizados
+
+commit 51ad2e184571af597e9f2e4ff31d4d026ad87207
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 11:57:25 2024 -0300
+
+    Teste de jogo impossível sendo feitos
+
+commit eb7b2e66f7d59840713fce6345c9d72fd7452b15
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 11:50:49 2024 -0300
+
+    refazendo alguns testes no arquivo testa_velha.cpp
+
+commit cd9a482b6d403f14239d54f2ed081646bc711ad3
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 11:44:59 2024 -0300
+
+    logica no velha.cpp refeita
+
+commit 8bf287871be73f600dae2888a06eb611065bda2a
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 11:38:44 2024 -0300
+
+    Testes feitos
+
+commit e9c36eeb00f2aeaa85706aeaef097bdf8b81f95e
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 11:35:15 2024 -0300
+
+    arquivo Makefile em desenvolvimento
+
+commit 1ac09c6af2d4ed065f058f3f1515b9608020d3ab
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 11:34:02 2024 -0300
+
+    testes sendo realizados
+
+commit 52ad5949c37179358d8b959a0911febfe2e9ec38
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 11:32:33 2024 -0300
+
+    testes sendo realizados
+
+commit a6561380a4194aba889b7e360a2b483e09b5dd3f
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 10:49:00 2024 -0300
+
+    Arquivo readme.md criado
+
+commit 3152fe53ff20f7a5f4de8434837283e1b75e6f25
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Thu Dec 5 13:30:29 2024 -0300
+
+    Arquivo README.md adicionado
+
+commit 233e4dc31856dca6af6ace1bcb7ccbad904ec79f
 Author: eduardoruas <eduardobritoruas@gmail.com>
 Date:   Thu Dec 5 12:55:05 2024 -0300
 
@@ -24,7 +134,7 @@ Date:   Thu Dec 5 12:16:08 2024 -0300
 
     testa_velha.cpp alterado
 
-commit cc07a64c520684b8698e89afc31b52e5df79d641 (origin/main)
+commit cc07a64c520684b8698e89afc31b52e5df79d641
 Author: eduardoruas <eduardobritoruas@gmail.com>
 Date:   Thu Dec 5 12:12:24 2024 -0300
 
@@ -181,3 +291,173 @@ Author: eduardoruas <eduardobritoruas@gmail.com>
 Date:   Mon Dec 2 19:27:21 2024 -0300
 
     arquivos velha.cpp, velha.h e  testa_velha.cpp criados
+ ESCOD
+Date:   Tue Dec 3 00:04:53 2024 -0300
+
+    segundo teste feito: saber se houve empate
+
+commit 0a35f03ce1ee119bfd44ac48501c28679eb6890e
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:59:48 2024 -0300
+
+    primeiro teste feito: saber quando o X vence
+
+commit 9bcbcba10148e492da1fc9fbe9406dddf23c35cc
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:19:07 2024 -0300
+
+    algoritmo dos arquivos velha.hpp e velha.cpp desenvolvidos
+
+commit f3cb2355fe1634361c50f8f4f482f93642a51c8b
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 20:13:01 2024 -0300
+
+    codigo do arquivo velha.cpp desenvolvido
+
+commit f3b90be7b01a2cf3d316ff078d927e9f96b0569c
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 19:27:21 2024 -0300
+
+    arquivos velha.cpp, velha.h e  testa_velha.cpp criados
+ ESCOD
+Date:   Tue Dec 3 00:04:53 2024 -0300
+
+    segundo teste feito: saber se houve empate
+
+commit 0a35f03ce1ee119bfd44ac48501c28679eb6890e
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:59:48 2024 -0300
+
+    primeiro teste feito: saber quando o X vence
+
+commit 9bcbcba10148e492da1fc9fbe9406dddf23c35cc
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:19:07 2024 -0300
+
+    algoritmo dos arquivos velha.hpp e velha.cpp desenvolvidos
+
+commit f3cb2355fe1634361c50f8f4f482f93642a51c8b
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 20:13:01 2024 -0300
+
+    codigo do arquivo velha.cpp desenvolvido
+
+commit f3b90be7b01a2cf3d316ff078d927e9f96b0569c
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 19:27:21 2024 -0300
+
+    arquivos velha.cpp, velha.h e  testa_velha.cpp criados
+ ESCOD
+Date:   Tue Dec 3 00:04:53 2024 -0300
+
+    segundo teste feito: saber se houve empate
+
+commit 0a35f03ce1ee119bfd44ac48501c28679eb6890e
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:59:48 2024 -0300
+
+    primeiro teste feito: saber quando o X vence
+
+commit 9bcbcba10148e492da1fc9fbe9406dddf23c35cc
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:19:07 2024 -0300
+
+    algoritmo dos arquivos velha.hpp e velha.cpp desenvolvidos
+
+commit f3cb2355fe1634361c50f8f4f482f93642a51c8b
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 20:13:01 2024 -0300
+
+    codigo do arquivo velha.cpp desenvolvido
+
+commit f3b90be7b01a2cf3d316ff078d927e9f96b0569c
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 19:27:21 2024 -0300
+
+    arquivos velha.cpp, velha.h e  testa_velha.cpp criados
+ ESCOD
+Date:   Tue Dec 3 00:04:53 2024 -0300
+
+    segundo teste feito: saber se houve empate
+
+commit 0a35f03ce1ee119bfd44ac48501c28679eb6890e
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:59:48 2024 -0300
+
+    primeiro teste feito: saber quando o X vence
+
+commit 9bcbcba10148e492da1fc9fbe9406dddf23c35cc
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:19:07 2024 -0300
+
+    algoritmo dos arquivos velha.hpp e velha.cpp desenvolvidos
+
+commit f3cb2355fe1634361c50f8f4f482f93642a51c8b
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 20:13:01 2024 -0300
+
+    codigo do arquivo velha.cpp desenvolvido
+
+commit f3b90be7b01a2cf3d316ff078d927e9f96b0569c
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 19:27:21 2024 -0300
+
+    arquivos velha.cpp, velha.h e  testa_velha.cpp criados
+ ESCOD
+Date:   Tue Dec 3 00:04:53 2024 -0300
+
+    segundo teste feito: saber se houve empate
+
+commit 0a35f03ce1ee119bfd44ac48501c28679eb6890e
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:59:48 2024 -0300
+
+    primeiro teste feito: saber quando o X vence
+
+commit 9bcbcba10148e492da1fc9fbe9406dddf23c35cc
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:19:07 2024 -0300
+
+    algoritmo dos arquivos velha.hpp e velha.cpp desenvolvidos
+
+commit f3cb2355fe1634361c50f8f4f482f93642a51c8b
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 20:13:01 2024 -0300
+
+    codigo do arquivo velha.cpp desenvolvido
+
+commit f3b90be7b01a2cf3d316ff078d927e9f96b0569c
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 19:27:21 2024 -0300
+
+    arquivos velha.cpp, velha.h e  testa_velha.cpp criados
+ ESCOD
+Date:   Tue Dec 3 00:04:53 2024 -0300
+
+    segundo teste feito: saber se houve empate
+
+commit 0a35f03ce1ee119bfd44ac48501c28679eb6890e
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:59:48 2024 -0300
+
+    primeiro teste feito: saber quando o X vence
+
+commit 9bcbcba10148e492da1fc9fbe9406dddf23c35cc
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 23:19:07 2024 -0300
+
+    algoritmo dos arquivos velha.hpp e velha.cpp desenvolvidos
+
+commit f3cb2355fe1634361c50f8f4f482f93642a51c8b
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 20:13:01 2024 -0300
+
+    codigo do arquivo velha.cpp desenvolvido
+
+commit f3b90be7b01a2cf3d316ff078d927e9f96b0569c
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Mon Dec 2 19:27:21 2024 -0300
+
+    arquivos velha.cpp, velha.h e  testa_velha.cpp criados
+(END)
+
