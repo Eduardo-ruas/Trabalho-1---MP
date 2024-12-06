@@ -205,16 +205,6 @@ TEST_CASE("Jogo impossível - muitos O", "[verifica_jogo]") {
     REQUIRE(verifica_jogo(tabuleiro) == -2);
 }
 
-//TESTE DE JOGO EM ANDAMENTO
-
-TEST_CASE("Jogo em andamento", "[verifica_jogo]") {
-    int tabuleiro[3][3] = {
-        {1, 2, 0},
-        {0, 1, 2},
-        {2, 0, 1}
-    };
-    REQUIRE(verifica_jogo(tabuleiro) == -1);
-}
 
 //TESTES DE CASOS IMPOSSÍVEIS COM MAIS NUANCES
 
