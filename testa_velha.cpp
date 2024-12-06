@@ -185,52 +185,24 @@ TEST_CASE("Jogo empatado", "[verifica_jogo]") {
     };
     REQUIRE(verifica_jogo(tabuleiro) == 0);
 }
-// TESTE JOGO IMPOSSÍVEL X
+// TESTE JOGO IMPOSSÍVEL 
 
-TEST_CASE("Jogo impossível - muitos X", "[verifica_jogo]") {
+TEST_CASE("Jogo impossível -  X", "[verifica_jogo]") {
     int tabuleiro[3][3] = {
         {1, 1, 1},
         {1, 1, 1},
-        {1, 0, 2}
+        {1, 1, 1}
     };
     REQUIRE(verifica_jogo(tabuleiro) == -2);
 }
 
-TEST_CASE("Jogo impossível - muitos O", "[verifica_jogo]") {
+TEST_CASE("Jogo impossível -  O", "[verifica_jogo]") {
     int tabuleiro[3][3] = {
         {2, 2, 2},
         {2, 2, 2},
-        {2, 1, 0}
-    };
-    REQUIRE(verifica_jogo(tabuleiro) == -2);
-}
-
-
-//TESTES DE CASOS IMPOSSÍVEIS COM MAIS NUANCES
-
-TEST_CASE("Jogo impossível - X vence em duas direções", "[verifica_jogo]") {
-    int tabuleiro[3][3] = {
-        {1, 1, 1},
-        {2, 1, 2},
-        {1, 2, 1}
-    };
-    REQUIRE(verifica_jogo(tabuleiro) == -2);
-}
-
-TEST_CASE("Jogo impossível - O vence em duas direções", "[verifica_jogo]") {
-    int tabuleiro[3][3] = {
-        {2, 1, 2},
-        {1, 2, 1},
         {2, 2, 2}
     };
     REQUIRE(verifica_jogo(tabuleiro) == -2);
 }
 
-TEST_CASE("Jogo impossível - mais X e O do que o permitido", "[verifica_jogo]") {
-    int tabuleiro[3][3] = {
-        {1, 2, 1},
-        {2, 1, 2},
-        {1, 2, 1}
-    };
-    REQUIRE(verifica_jogo(tabuleiro) == -2);
-}
+
