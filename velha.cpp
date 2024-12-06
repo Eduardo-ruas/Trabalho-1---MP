@@ -19,7 +19,27 @@ int verifica_jogo(int tabuleiro[3][3]) {
         return tabuleiro[0][2];
     }
 
-    // 2. Verificar se o jogo é impossível (todos os quadrados são iguais)
+    // 2. Verificar se todas as casas do tabuleiro são iguais (jogo impossível)
+    bool todas_iguais = true;
+    int primeiro = tabuleiro[0][0]; // Valor da primeira casa
+
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            if (tabuleiro[i][j] != primeiro || tabuleiro[i][j] == 0) {
+                todas_iguais = false;
+                break;
+            }
+        }
+        if (!todas_iguais) {
+            break;
+        }
+    }
+
+    if (todas_iguais) {
+        return -2;  // Jogo impossível
+    }
+
+    // 3. Verificar se o jogo é impossível (mais de 5 jogadas para X ou O)
     int x_count = 0;
     int o_count = 0;
     for (int i = 0; i < 3; ++i) {
@@ -36,7 +56,7 @@ int verifica_jogo(int tabuleiro[3][3]) {
         return -2;  // Jogo impossível
     }
 
-    // 3. Verificar se há posições vazias (indefinido)
+    // 4. Verificar se há posições vazias (jogo indefinido)
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
             if (tabuleiro[i][j] == 0) {
@@ -45,6 +65,6 @@ int verifica_jogo(int tabuleiro[3][3]) {
         }
     }
 
-    // Se não houver vencedor, o jogo está empatado
+    // 5. Se não houver vencedor, o jogo está empatado
     return 0; 
 }
