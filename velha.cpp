@@ -1,7 +1,6 @@
 #include "velha.hpp"
 
 int verifica_jogo(int tabuleiro[3][3]) {
-    // Verificar se há um vencedor ou se o jogo é impossível ou indefinido
     // 1. Verificar se há um vencedor
     for (int i = 0; i < 3; ++i) {
         if (tabuleiro[i][0] == tabuleiro[i][1] && tabuleiro[i][1] == tabuleiro[i][2] && tabuleiro[i][0] != 0) {
@@ -20,16 +19,7 @@ int verifica_jogo(int tabuleiro[3][3]) {
         return tabuleiro[0][2];
     }
 
-    // Verificar se há posições vazias (indefinido)
-    for (int i = 0; i < 3; ++i) {
-        for (int j = 0; j < 3; ++j) {
-            if (tabuleiro[i][j] == 0) {
-                return -1;  // Jogo indefinido
-            }
-        }
-    }
-
-  // 2. Verificar se o jogo é impossível (todos os quadrados são iguais)
+    // 2. Verificar se o jogo é impossível (todos os quadrados são iguais)
     int x_count = 0;
     int o_count = 0;
     for (int i = 0; i < 3; ++i) {
@@ -42,7 +32,7 @@ int verifica_jogo(int tabuleiro[3][3]) {
         }
     }
 
-   if (x_count > 5 || o_count > 5) {
+    if (x_count > 5 || o_count > 5) {
         return -2;  // Jogo impossível
     }
 
@@ -57,5 +47,4 @@ int verifica_jogo(int tabuleiro[3][3]) {
 
     // Se não houver vencedor, o jogo está empatado
     return 0; 
-
 }
