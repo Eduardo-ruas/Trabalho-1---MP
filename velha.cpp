@@ -42,7 +42,7 @@ int verifica_jogo(int tabuleiro[3][3]) {
         }
     }
 
-    if (x_count > 5 || o_count > 5) {
+   if (x_count > 5 || o_count > 5) {
         return -2;  // Jogo impossível
     }
 
@@ -57,4 +57,5 @@ int verifica_jogo(int tabuleiro[3][3]) {
 
     // Se não houver vencedor, o jogo está empatado
     return 0; 
+
 }
