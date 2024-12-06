@@ -1,4 +1,15 @@
--> O programa pode ser compilado apenas com o comando "make"
+-> O programa pode ser compilado apenas com o comando "make all".
+
+-> Para compilar o verificador de cobertura "make gcov".
+
+-> Variáveis do Makefile para facilitar alterações futuras:
+CXX = g++
+CXXFLAGS = -std=c++11 -Wall
+COVERAGE_FLAGS = -fprofile-arcs -ftest-coverage
+DEBUG_FLAGS = -g
+LDFLAGS = 
+TARGET = testa_velha
+OBJS = velha.o
 
 -> As regras estão no arquivo Makefile
 
@@ -6,8 +17,25 @@
 
 -> GIT LOGS DO PROJETO:
 
-eduardo@DESKTOP-FFN2OM5:~/Trabalho-MP$ git log
-commit a89647aa6b9e6365f91038271b0064c1e97a16ea (HEAD -> main, origin/main)
+commit 2e20ba816b90a63ca46605ac6139af1e2851c7a8 (HEAD -> main)
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 17:51:34 2024 -0300
+
+    Verificador de cobertura feito
+
+commit 55b896701e502aeaf21231ccbf7e2e9ff7ea11af (origin/main)
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 13:35:27 2024 -0300
+
+    teste gcov realizado
+
+commit 79f11ce1282c826fffddb8a522f1f6a9d0b46666
+Author: eduardoruas <eduardobritoruas@gmail.com>
+Date:   Fri Dec 6 13:02:09 2024 -0300
+
+    Arquivos readme.md completo
+
+commit a89647aa6b9e6365f91038271b0064c1e97a16ea
 Author: eduardoruas <eduardobritoruas@gmail.com>
 Date:   Fri Dec 6 12:58:41 2024 -0300
 
