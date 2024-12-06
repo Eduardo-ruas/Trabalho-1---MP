@@ -187,22 +187,22 @@ TEST_CASE("Jogo empatado", "[verifica_jogo]") {
 }
 // TESTE JOGO IMPOSSÍVEL 
 
-TEST_CASE("Jogo impossível -  X", "[verifica_jogo]") {
+TEST_CASE("Jogo impossível - Todas as casas são X", "[verifica_jogo]") {
     int tabuleiro[3][3] = {
         {1, 1, 1},
         {1, 1, 1},
         {1, 1, 1}
     };
-    REQUIRE(verifica_jogo(tabuleiro) == -2);
+    REQUIRE(verifica_jogo(tabuleiro) == -2);  // Jogo impossível, todas as casas são X
 }
 
-TEST_CASE("Jogo impossível -  O", "[verifica_jogo]") {
+TEST_CASE("Jogo impossível - Todas as casas são O", "[verifica_jogo]") {
     int tabuleiro[3][3] = {
         {2, 2, 2},
         {2, 2, 2},
         {2, 2, 2}
     };
-    REQUIRE(verifica_jogo(tabuleiro) == -2);
+    REQUIRE(verifica_jogo(tabuleiro) == -2);  // Jogo impossível, todas as casas são O
 }
 
 
