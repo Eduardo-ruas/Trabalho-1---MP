@@ -1,5 +1,7 @@
 #define CATCH_CONFIG_MAIN  // Isso diz ao Catch2 para fornecer uma função main()
-#include "catch_amalgamated.hpp" 
+#include "catch.hpp" 
+#include "velha.hpp"
+
 
 int verifica_jogo(int tabuleiro[3][3]);  // Declaração da função verifica_jogo
 
